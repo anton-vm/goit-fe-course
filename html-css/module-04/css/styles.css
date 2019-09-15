@@ -1,0 +1,198 @@
+*,
+::before,
+::after {
+    box-sizing: inherit
+}
+
+* {margin: 0}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto
+}
+
+.head {
+    margin-top: 50px
+}
+
+.navigation {
+    display: block;
+    float: right;
+    width: 550px;
+    list-style: none
+}
+
+.head ul {
+    padding: 0;
+    margin: 0;
+}
+
+.head li {
+float: left;
+}
+
+.navigation li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.navigation a {
+    font: 700 18px "Roboto";
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #323232;
+    line-height: 22px;
+}
+
+.navigation a:hover {
+    color: #85dbca;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    margin-top: 105px;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 48px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #555252;
+    font-weight: 900;
+
+}
+
+h2:after {
+    display: block;
+    content: "";
+    width: 165px;
+    height: 30px;
+    border-bottom: 8px solid #4ec6ab;
+    margin: 0 auto 70px auto
+}
+
+
+.product-list {
+    margin: 0;
+    padding: 0
+}
+
+.product-list button {
+    padding: 0;
+    margin: 0;
+    width: 255px;
+    height: 40px;
+    background-color: #323232;
+    border: #323232;
+    float: left;
+}
+.product-list button:hover {
+    background-color: #4ec6ab
+}
+
+.product-area {
+    display: block;
+    width: 255px;
+    height: 320px;
+    background-color: #e9f0fd;
+    margin: 0 14px 30px 14px;
+    float: left;
+}
+
+
+.picture img {
+    height: 280px;
+    width: 255px
+}
+
+.description p{
+    display: block;
+    width: 195px;
+    float: left;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    padding-top: 5px
+
+}
+
+.price {
+    display: block;
+    width: 55px;
+    height: 35px;
+    background-color: #8c8c8c;
+    float: right;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    padding-top: 5px
+}
+
+.price::before {
+    content: "\0024"
+}
+
+.news ul {
+    padding: 0;
+    margin: 0;
+}
+
+.news li {
+    display: block;
+    width: 350px;
+    margin: 15px;
+    float: left
+}
+
+h3 {
+    font: 700 18px "Roboto";
+    line-height: 26px;
+    color: #323232;
+    margin-top: 14px;
+}
+
+h3:after {
+    display: block;
+    content: "";
+    width: 137px;
+    height: 10px;
+    border-bottom: 2px solid #4ec6ab;
+    margin-bottom: 30px
+}
+
+.news p {
+    font: 500 14px "Roboto";
+    line-height: 26px;
+    color: #323232;
+    margin-bottom: 20px
+}
+
+.news button {
+    width: 160px;
+    height: 50px;
+    background-color: #4ec6ab;
+    font: 300 16px "Roboto";
+    line-height: 26px;
+    color: white;
+    border: transparent
+}
+
+.news button:hover {
+    background: #323232
+}
+.down {
+    margin: 50px
+}

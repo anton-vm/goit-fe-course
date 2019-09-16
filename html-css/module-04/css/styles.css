@@ -13,17 +13,26 @@ img {
 }
 
 .container {
-    max-width: 1140px;
+    width: 1140px;
     margin: auto
 }
 
 .head {
-    margin-top: 50px
+    padding-top: 50px
+}
+
+.logo {
+    display: inline-block;
+    width: 50px;
+    margin-left: 15px
+}
+
+.head nav {
+    float: right;
 }
 
 .navigation {
     display: block;
-    float: right;
     width: 550px;
     list-style: none
 }
@@ -42,6 +51,7 @@ float: left;
 }
 
 .navigation a {
+    display: block;
     font: 700 18px "Roboto";
     text-decoration: none;
     text-transform: uppercase;
@@ -58,7 +68,7 @@ float: left;
 }
 
 h2 {
-    margin-top: 105px;
+    padding-top: 105px;
     text-align: center;
     font-family: "Roboto";
     font-size: 48px;
@@ -84,7 +94,11 @@ h2:after {
     padding: 0
 }
 
-.product-list button {
+.product-list li:nth-child(n + 5) {
+    margin-bottom: 0;
+}
+
+.product-area button {
     padding: 0;
     margin: 0;
     width: 255px;
@@ -93,8 +107,15 @@ h2:after {
     border: #323232;
     float: left;
 }
-.product-list button:hover {
+.product-area button:hover {
     background-color: #4ec6ab
+}
+
+/* .price:hover {
+    background-color: #85dbca
+} */
+.product-area button:hover .price {
+    background-color: #85dbca
 }
 
 .product-area {
@@ -109,7 +130,7 @@ h2:after {
 
 .picture img {
     height: 280px;
-    width: 255px
+    width: auto
 }
 
 .description p{
@@ -145,10 +166,15 @@ h2:after {
     content: "\0024"
 }
 
+.news {
+    margin-bottom: 50px
+}
+
 .news ul {
     padding: 0;
     margin: 0;
 }
+
 
 .news li {
     display: block;
@@ -191,8 +217,11 @@ h3:after {
 }
 
 .news button:hover {
-    background: #323232
+    background: #323232;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.4)
+    
 }
-.down {
-    margin: 50px
+
+.product-area:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.4)
 }

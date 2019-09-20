@@ -19,14 +19,17 @@ img {
 }
 
 .head {
-    padding-top: 50px
+    padding-top: 50px;
+    width: 1110px
 }
 
 .logo {
+    display: block;
     font: 700 20px "Roboto";
     color: #323232;
     text-transform: uppercase;
-    text-decoration: none
+    text-decoration: none;
+    float: left
 }
 
 .logo::first-letter {
@@ -36,18 +39,20 @@ img {
 }
 
 .head nav {
+    display: block;
     float: right;
 }
 
 .navigation {
     display: block;
-    width: 550px;
-    list-style: none
+    width: auto;
+    list-style: none;
 }
 
 .head ul {
     padding: 0;
     margin: 0;
+    padding-top: 5px
 }
 
 .head li {
@@ -109,15 +114,15 @@ h2:after {
     margin-bottom: 0;
 }
 
-.description {
+/* .description {
     padding: 0;
     margin: 0;
     width: 255px;
     height: 40px;
     background-color: #323232;
     border: #323232;
-    float: left;
-}
+} */
+
 .product-area:hover .description{
     background-color: #4ec6ab
 }
@@ -146,29 +151,42 @@ h2:after {
     height: 275px;
     width: auto
 }
+.product-area--a {
+    display: block
+}
 
 .description {
     display: block;
     width: 190px;
-    float: left;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 40px;
     text-transform: uppercase;
+    text-decoration: none;
     color: white;
     font-weight: 700;
     padding-top: 5px;
-    padding-left: 10px
-
-
+    padding-left: 10px;
+    background-color: #323232;
 }
 
 .price {
     display: block;
-    width: 55px;
+    width: 40px;
+    background-color: #8c8c8c;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+
+/* .description::after {
+    display: block;
+    width: 25px;
     height: 40px;
     background-color: #8c8c8c;
-    float: right;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 32px;
@@ -176,7 +194,7 @@ h2:after {
     color: white;
     font-weight: 700;
     padding-top: 5px
-}
+}  */
 
 .price::before {
     content: "\0024"
@@ -187,7 +205,7 @@ h2:after {
     font: 500 14px "Roboto";
     line-height: 26px;
     color: #323232;
-    margin-bottom: 20px
+    padding-bottom: 20px
 }
 
 .news ul {
@@ -200,7 +218,6 @@ h2:after {
     display: block;
     width: 350px;
     margin-right: 30px;
-    margin-bottom: 30px;
     float: left
 }
 
@@ -208,7 +225,7 @@ h2:after {
     margin-right: 0;
 }
 
-h3 {
+.head-article {
     font: 700 18px "Roboto";
     line-height: 26px;
     color: #323232;
@@ -216,7 +233,7 @@ h3 {
     margin-bottom: 30px;
 }
 
-h3:after {
+.head-article:after {
     display: block;
     content: "";
     width: 137px;

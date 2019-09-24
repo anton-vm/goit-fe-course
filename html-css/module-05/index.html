@@ -13,10 +13,10 @@
 </head>
 <body>
 
-    <header class="head-box">
+    <header class="head-box clearfix">
         <a href="" class="logo">mart</a>
         <nav>
-            <ul class="navigation clearfix">
+            <ul class="navigation ">
                 <li class="navigation-title"><a href="">home</a></li>
                 <li class="navigation-title"><a href="">about us</a></li>
                 <li class="navigation-title"><a href="">page</a></li>
@@ -29,35 +29,47 @@
 
 <main>
 
+<div class="slider-first">
     <div class="slider">
         <button class="slider-left"><span class="pe-7s-angle-left"></span></button>
         <button class="slider-right"><span class="pe-7s-angle-right"></span></button>
-        <p class="slider-head">AFFORDABLE PARIS TOURS</p>
-        <p class="slider-text">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-        <ul class="slide-img">
-            <li class="slide-img--picture"> <img src="img/slide4.png" alt="" width="1600" height="600" class="slider-img"></li>
+        <ul class="slide-item">
+            <!-- <li class="slide-img--picture"> <img src="img/slide4.png" alt="" width="1600" height="600" class="slider-img"></li> -->
+            <li class="slide-item--content">
+                <p class="slider-head">AFFORDABLE PARIS TOURS</p>
+                <p class="slider-text">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+            </li>
             <li class="slide-img--picture"></li>
             <li class="slide-img--picture"></li>
         </ul>
     </div>
+</div>
 
 <section class="articles">
-
-    <div class="article-header">
+<div class="container">
+    <!-- <div class="article-header"> -->
     <h2 class="articles-head">new collection</h2>
-    </div>
+    <!-- </div> -->
 
 
     <ul class="articles-data clearfix">
         <li class="articles-item"><a href="#">
             <div class="overlay">
             <div class="overlay-shadow"></div>
-            <div class="overlay-buttons clearfix">
+            <ul class="overlay-buttons">
+                <li><button class="button-icons"><span class="pe-7s-like"></span></button></li>
+                <li><button class="button-icons"><span class="pe-7s-shuffle"></span></button></li>
+                <li><button class="button-icons"><span class="pe-7s-clock"></span></button></li>
+              
+            </ul>
+            <button class="button-add"><span class="pe-7s-cart"></span>add to card </button>
+
+            <!-- <div class="overlay-buttons clearfix">
                 <a class="button-icons"><span class="pe-7s-like"></span></a>
                 <a class="button-icons"><span class="pe-7s-shuffle"></span></a>
                 <a class="button-icons"><span class="pe-7s-clock"></span></a>
-            </div>
-            <button class="button-add"><span class="pe-7s-cart"></span>add to card </button>
+            </div> -->
+            <!-- <button class="button-add"><span class="pe-7s-cart"></span>add to card </button> -->
             </div>
             
             <img src="img/category-2.png" alt="">
@@ -68,11 +80,12 @@
         <li class="articles-item"><a href="">
             <div class="overlay">
             <div class="overlay-shadow"></div>
-            <div class="overlay-buttons clearfix">
-                            <a class="button-icons"><span class="pe-7s-like"></span></a>
-                            <a class="button-icons"><span class="pe-7s-shuffle"></span></a>
-                            <a class="button-icons"><span class="pe-7s-clock"></span></a>
-            </div>
+            <ul class="overlay-buttons">
+                    <li><button class="button-icons"><span class="pe-7s-like"></span></button></li>
+                    <li><button class="button-icons"><span class="pe-7s-shuffle"></span></button></li>
+                    <li><button class="button-icons"><span class="pe-7s-clock"></span></button></li>
+                  
+            </ul>
             <button class="button-add"><span class="pe-7s-cart"></span>add to card </button>
             </div>
 
@@ -84,11 +97,12 @@
             <li class="articles-item"><a href="">
                 <div class="overlay">
                 <div class="overlay-shadow"></div>
-                <div class="overlay-buttons clearfix">
-                                    <a class="button-icons"><span class="pe-7s-like"></span></a>
-                                    <a class="button-icons"><span class="pe-7s-shuffle"></span></a>
-                                    <a class="button-icons"><span class="pe-7s-clock"></span></a>
-                </div>
+                <ul class="overlay-buttons">
+                        <li><button class="button-icons"><span class="pe-7s-like"></span></button></li>
+                        <li><button class="button-icons"><span class="pe-7s-shuffle"></span></button></li>
+                        <li><button class="button-icons"><span class="pe-7s-clock"></span></button></li>
+                      
+                </ul>
                 <button class="button-add"><span class="pe-7s-cart"></span>add to card </button>
                 </div>
             <img src="img/category-4.png" alt="">
@@ -99,11 +113,12 @@
         <li class="articles-item"><a href="">
                 <div class="overlay">
                 <div class="overlay-shadow"></div>
-                <div class="overlay-buttons clearfix">
-                            <a class="button-icons"><span class="pe-7s-like"></span></a>
-                            <a class="button-icons"><span class="pe-7s-shuffle"></span></a>
-                            <a class="button-icons"><span class="pe-7s-clock"></span></a>
-                </div>
+                <ul class="overlay-buttons">
+                        <li><button class="button-icons"><span class="pe-7s-like"></span></button></li>
+                        <li><button class="button-icons"><span class="pe-7s-shuffle"></span></button></li>
+                        <li><button class="button-icons"><span class="pe-7s-clock"></span></button></li>
+                      
+                </ul>
                 <button class="button-add"><span class="pe-7s-cart"></span>add to card </button>
                 </div>
             <img src="img/category-3.png" alt="">
@@ -111,6 +126,7 @@
             <p class="articles-price">56</p>
         </a></li>
     </ul>
+</div>
 </section>
 </main>
 

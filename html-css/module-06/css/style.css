@@ -31,17 +31,18 @@
     padding-top: 40px;
     list-style: none;
     display: flex;
-    width: 490px;
+    min-width: 490px;
     justify-content: space-between;
 }
 
 
 .nav-box--item {
+    display: block;
     font: 700 14px "Montserrat";
     color: #95e1d3;
     text-decoration: none;
     text-transform: uppercase;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.2s;
 }
 
 .nav-box--item::after {
@@ -56,7 +57,7 @@
 .nav-box--item:hover {
     color: #f38181;
 }
-.nav-box--item:hover .nav-box--item::after {
+.nav-box--item:hover .nav-box--item::after{
     opacity: 1;
 }
 
@@ -68,17 +69,19 @@
 .services-head--ital {
     font: 500 24px "Kaushan Script";
     text-align: center;
-    padding-top: 80px;
-    color: #333333
+    padding-top: px;
+    color: #333333;
+    text-transform: none;
 }
 
 .services-head--big {
     font: 700 30px "Roboto";
     text-align: center;
-    padding-top: 25px;
+    padding-top: 50px;
     text-transform: uppercase;
     color: #333333;
     padding-bottom: 67px;
+    line-height: 60px;
 }
 
 .services-head--big::after {
@@ -90,13 +93,16 @@
     margin: 0 auto;
 }
 
+.services-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .services-list {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none; 
-    width: 1200px;
-    margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-between
 }
@@ -120,7 +126,36 @@
 }
 .services-item-text {
     display: block;
-    max-width: 301px;
+    width: 301px;
+
+}
+
+.services-img::before {
+    display: flex;
+    content: '';
+    width: 80px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.services-img--one::before {
+    background-image: url(../img/icons/ALARM.png);
+}
+.services-img--two::before {
+    background-image: url(../img/icons/LINE\ GRAPH.png);
+}
+.services-img--three::before {
+    background-image: url(../img/icons/IMAGE.png);
+}
+.services-img--four::before {
+    background-image: url(../img/icons/HOME.png);
+}
+.services-img--five::before {
+    background-image: url(../img/icons/COMPUTER\ _\ OK.png);
+}
+.services-img--six::before {
+    background-image: url(../img/icons/BOOK\ 2.png);
 }
 
 .services-item-head {
@@ -137,7 +172,7 @@
 
 
 .team {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -227,10 +262,12 @@ width: 380px;
     right: 0;
     z-index: 100;
     transition: ease-in 0.2s;
+
 }
 
 .team-social--icon {
     display: flex;
+    content: '';
     width: 56px;
     height: 56px;
     background-color: #fce38a;
@@ -239,6 +276,25 @@ width: 380px;
     margin: 1px;
     opacity: 0;
     transition: ease-in 0.2s;
+    background-repeat: no-repeat;
+    background-position: center
+}
+.team-icon--facebook {
+    background-image: url(../img/social/facebook.png);
+
+}
+.team-icon--printerest {
+    background-image: url(../img/social/pinterest.png);
+
+}
+.team-icon--instagram {
+    background-image: url(../img/social/instagram.png);
+
+}
+
+.team-icon--twitter {
+    background-image: url(../img/social/twitter.png);
+    
 }
 
 .team-social--icon:hover {
@@ -263,6 +319,7 @@ transition: ease-in 0.2s;
     display: flex;
     border-top: 1px solid #999999;
     min-height: 65px;
+    width: 1200px;
     justify-content: space-between;
     align-items: center
   }

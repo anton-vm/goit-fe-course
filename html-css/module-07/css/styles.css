@@ -63,7 +63,7 @@
     text-decoration: none;
 }
 
-.navigation {
+.navigation-list {
     display: flex;
     margin: 0;
     padding: 0;
@@ -72,12 +72,11 @@
 }
 
 .navigation-item {
-
     list-style: none;
 
 }
 
-.navigation-list {
+.navigation-link {
     display: flex;
     font-family: 'Montserrat';
     font-size: 14px;
@@ -87,7 +86,7 @@
     text-transform: uppercase;
 }
 
-.navigation-list:hover {
+.navigation-link:hover {
     color: #fed136;
 }
 
@@ -167,8 +166,6 @@ background-image: url(../img/Icon-Locked.png);
     text-align: center;
 }
 .contacts-bgd {
-    display: block;
-    content: '';
     height: 685px;
     background-color: #222222;
     background-image: url(../img/Map\ Image.png);

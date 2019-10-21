@@ -34,10 +34,21 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    text-align: center;
+}
+
+.login-btns {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    color: white;
 }
 
 
 .btn-login {
+    display: block;
     padding: 0 18px 0 18px;
     color: #fff;
     font-family: "Montserrat";
@@ -201,41 +212,18 @@
     color: #fff;
 }
 
-/* @media (max-width: 767px) {
-.partners-list {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-} */
-
-
-/* @media   (max-width: 575px) {
-
-    .head-top {
-        max-height: 540px;
-    }
-    .head-find-btn {
-        padding-bottom: 110px;
-    }
-    .head-top {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        }
+ @media   (max-width: 575px) {
 
     .head-bgd {
         padding-top: 20px;
     }
 
-    .login-btns {
-        justify-content: center;
-        padding-bottom: 100px;
-    }
     .head-title {
         padding-top: 40px;
     }
 
     .logo {
-        padding-left: 0;
+        padding-top: 120px;
     }
-} */
+
+ }

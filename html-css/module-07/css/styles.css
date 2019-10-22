@@ -199,6 +199,7 @@ background-image: url(../img/Icon-Locked.png);
     height: 52px;
     text-transform: uppercase;
     padding: 20px;
+    outline: 2px solid green;
 }
 
 .contacts-info {
@@ -208,6 +209,7 @@ background-image: url(../img/Icon-Locked.png);
     border: 1px solid #222222;
     border-radius: 6px;
     padding: 20px;
+    outline: 2px solid red;
 }
 
 .contacts-btn {

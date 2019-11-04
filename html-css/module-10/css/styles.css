@@ -368,7 +368,7 @@ width: 380px;
 }
 .team-social_svg {
 height: 27px;
-width: auto;
+width: 27px;
 fill: #f38181;
 }
 
@@ -401,8 +401,9 @@ fill: #f38181;
 .team_picture:hover .team_overlay {
     opacity: 0.8
 }
-.team_picture:hover .team-social_link {
+.team_picture:hover .team-social_link .team-social_svg{
     opacity: 1;
+    fill: #fff
 }
 
 .team_picture:hover {

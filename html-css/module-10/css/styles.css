@@ -133,14 +133,14 @@
 }
 
 
-.title_ital {
+.section_title-cursive {
     font: 500 24px "Kaushan Script";
     text-align: center;
     color: #333333;
     text-transform: none;
 }
 
-.title_big {
+.section_title {
     font: 700 30px "Roboto";
     text-align: center;
     padding-top: 50px;
@@ -354,7 +354,7 @@ width: 380px;
 
 }
 
-.team-social_icon {
+.team-social_link {
     display: flex;
     content: '';
     width: 56px;
@@ -365,9 +365,17 @@ width: 380px;
     margin: 1px;
     opacity: 0;
     transition: ease-in 0.2s;
-    background-repeat: no-repeat;
-    background-position: center
 }
+.team-social_svg {
+height: 27px;
+width: auto;
+fill: #f38181;
+}
+
+.team-social_svg:hover {
+    fill: #fff
+}
+
 /* .team-icon--facebook {
     background-image: url(../img/social/facebook.png);
 
@@ -386,14 +394,14 @@ width: 380px;
     
 } */
 
-.team-social_icon:hover {
-    background-color: #95e1d3
+.team-social_link:hover {
+    background-color: #f38181
 }
 
 .team_picture:hover .team_overlay {
     opacity: 0.8
 }
-.team_picture:hover .team-social_icon {
+.team_picture:hover .team-social_link {
     opacity: 1;
 }
 

@@ -1,0 +1,25 @@
+.section_title-cursive {
+    font: 500 24px $writing-font;
+    text-align: center;
+    color: $dark-color;
+    text-transform: none;
+}
+
+.section_title {
+    font: 700 30px "Montserrat";
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+    color: $dark-color;
+    padding-bottom: 67px;
+    line-height: 60px;
+}
+
+.section_title::after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 43px;
+    border-bottom: 3px solid $underline-color;
+    margin: 0 auto;
+}

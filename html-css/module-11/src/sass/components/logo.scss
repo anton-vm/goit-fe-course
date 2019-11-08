@@ -1,0 +1,12 @@
+.logo {
+    display: block;
+    font: 700 30px "Montserrat";
+    color: $main-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: $main-color;
+    }
+}
+

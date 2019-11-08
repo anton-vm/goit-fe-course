@@ -1,0 +1,39 @@
+.foot-container {
+    display: flex;
+    border-top: 1px solid $light-dark-color;
+    min-height: 65px;
+    justify-content: space-between;
+    align-items: center
+  }
+
+.foot_text {
+    font: 500 14px $secondary-font;
+}
+.foot_text a{
+    color:$underline-color;
+    text-decoration: none
+}
+
+.foot_input {
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    height: 40px;
+    border: 1px solid $light-dark-color;
+    margin-right: -4px;
+}
+.foot-btn {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 120px;
+    font: 700 14px $secondary-font;
+    color: $main-color;
+    text-transform: uppercase;
+    background-color: #95e1d3;
+    border: 1px solid #95e1d3;
+}
+.foot-btn:hover {
+    background-color: $light-dark-color;
+    transition: ease-in 0.3s
+}

@@ -1,0 +1,3 @@
+$icons: one, two, three, four, five, six;
+
+@include generate-pseudo-icons('icon-', $icons, '../images/icons/icon-', 'png')

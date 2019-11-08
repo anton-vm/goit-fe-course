@@ -1,0 +1,100 @@
+.services_list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.services_item {
+    display: flex;
+    width: 381px;
+    align-items: flex-start
+}
+
+.services_item:nth-child(-n +3) {
+    margin-bottom: 100px
+}
+
+
+
+.services_text {
+    display: block;
+    width: 301px;
+
+}
+
+.services_img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    padding: 0 25px;
+
+
+&::before {
+    display: flex;
+    content: '';
+    width: 80px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+   
+}
+&--photo::before {
+    background-image: url(../images/icons/icon-one.png);
+}
+&--design::before {
+    background-image: url(../images/icons/icon-two.png);
+}
+&--creative::before {
+    background-image: url(../images/icons/icon-three.png);
+}
+&--ceo::before {
+    background-image: url(../images/icons/icon-four.png);
+}
+&--css::before {
+    background-image: url(../images/icons/icon-five.png);
+}
+&--digital::before {
+    background-image: url(../images/icons/icon-six.png);
+}
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+    .services_img {
+
+    &--photo::before {
+        background-image: url(../images/icons/icon-one@2x.png);
+    }
+    &--design::before {
+        background-image: url(../images/icons/icon-two@2x.png);
+    }
+    &--creative::before {
+        background-image: url(../images/icons/icon-three@2x.png);
+    }
+    &--ceo::before {
+        background-image: url(../images/icons/icon-four@2x.png);
+    }
+    &--css::before {
+        background-image: url(../images/icons/icon-five@2x.png);
+    }
+    &--six::before {
+        background-image: url(../images/icons/icon-six@2x.png);
+    }
+}
+}
+
+.services_head {
+    font: 700 14px $main-font;
+    text-transform: uppercase;
+    color: $dark-color;
+    padding-bottom: 22px;
+}
+.services_info {
+    font: 500 15px $main-font;
+    color: $light-dark-color;
+    line-height: 24px;
+}

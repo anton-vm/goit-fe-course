@@ -18,7 +18,7 @@
     display: block;
     background-color: transparent;
     height: 775px;
-    width: 100%;
+    /* min-width: 120%; */
     /* position: absolute; */
     clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 }
@@ -29,7 +29,7 @@
     display: block;
     background-color: #4a454b;
     height: 775px;
-    width: 100%;
+    /* min-width: 120%; */
     /* position: relative; */
     /* clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%); */
 }
@@ -748,4 +748,17 @@ fill: #a3cc40;
     top: 100px;
     transform: rotate(-45deg);
     z-index: 2;
+}
+
+@media screen and (max-width: 1030px) {
+    /* .top-part_bgd, 
+    .top-part_hidder,
+    .elite_bgd,
+    .sponsor-bgd,
+    .contact_bgd,
+    .foot */
+    body {
+        width: 1070px;
+        padding: 0 20px;
+     }
 }
